@@ -1,0 +1,1 @@
+document.getElementById('message').textContent = 'Deployed successfully via GitHub Actions + Azure Static Web Apps.';
