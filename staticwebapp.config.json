@@ -1,7 +1,11 @@
 {
 	"routes":[
-		{"route":"/admin*"},
-		{"allowedRoles": ["authenticated"]}
+		{"route":"/admin*",
+		"allowedRoles": ["authenticated"]},
+		{
+     		 "route": "/api/*",
+      		"methods": ["GET"]
+    		}
 	],
 	"navigationFallback":{
 	"rewrite":"/index.html",
