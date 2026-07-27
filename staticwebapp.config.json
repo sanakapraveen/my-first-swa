@@ -1,5 +1,5 @@
 {
-   "routes":[
+   "routes": [
       {
          "route":"/admin*",
          "allowedRoles":[
@@ -13,14 +13,14 @@
          ]
       }
    ],
-   "navigationFallback":{
+   "navigationFallback": {
       "rewrite":"/index.html",
       "exclude":[
          "/images/*.png",
          "/css/*"
       ]
    },
-   "responseOverrides":{
+   "responseOverrides": {
       "404":{
          "rewrite":"/index.html",
          "statusCode":200
