@@ -1,0 +1,16 @@
+{
+	"routes":[
+		{"route":"/admin*"},
+		{"allowedRoles": ["authenticated"]}
+	],
+	"navigationFallback":{
+	"rewrite":"/index.html",
+	"exclude":["/images/*.png","/css/*"]
+	},
+	"responseOverrides":{
+	"404":{
+		"rewrite":"/index.html",
+		"statusCode":200
+		}
+	}
+}
